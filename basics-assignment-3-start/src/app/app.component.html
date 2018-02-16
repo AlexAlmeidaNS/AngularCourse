@@ -15,7 +15,7 @@
        
         <div *ngFor="let counter of clicks ; let i = index"
             [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'white'}"
-            [ngClass]="{'myOwnBg': i >= 4}">{{i}}</div> 
+            [ngClass]="{'myOwnBg': i >= 4}">{{counter}}</div> 
 
     </div>
   </div>

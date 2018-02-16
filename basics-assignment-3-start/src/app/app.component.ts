@@ -10,7 +10,6 @@ import { CommonModule } from "@angular/common";
 export class AppComponent {
 
 clicks = [];
-numberClicks=0;
 lineCreated=false;
 
 onClickLog() {	
@@ -18,9 +17,7 @@ onClickLog() {
 
 		this.lineCreated = !this.lineCreated ;
 			
-			this.numberClicks += 1;
-
-			this.clicks.push(this.numberClicks);
+		this.clicks.push(new Date());
 			}
 
 
